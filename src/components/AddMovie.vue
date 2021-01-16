@@ -1,7 +1,7 @@
 <template>
   <v-form v-model="valid" ref="form" lazy-validation>
     <v-text-field
-      label="Nombre"
+      label="Nombre de pelicula"
       v-model="name"
       :rules="nameRules"
       required
@@ -57,7 +57,7 @@ export default {
             release_year: this.release_year,
             genre: this.genre
           },
-          url: 'http://localhost:8081/movies',
+          url: '/movies',
           headers: {
             'Content-Type': 'application/json'
           }

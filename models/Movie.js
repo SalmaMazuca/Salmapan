@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Atributos de AddMovie, envía la información y la recibe Movie.js
 const Schema = mongoose.Schema;
 const MovieSchema = new Schema({
     name: String,
@@ -9,4 +9,4 @@ const MovieSchema = new Schema({
 });
 
 const Movie = mongoose.model('Movie', MovieSchema);
-module.exports = Movie;
+module.exports = Movie;  // Se ejecuta con express
