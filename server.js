@@ -30,7 +30,7 @@ app.use(session({
     cookie: { httpOnly: false }
 }))
 app.use(passport.initialize());
-app.use(passport.session);
+app.use(passport.session());
 
 // conexión a mongodb
 mongoose.connect(config.DB, function() {
