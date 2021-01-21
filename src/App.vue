@@ -21,10 +21,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar color="indigo" dark fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer =!drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title name="inicio">Inicio</v-toolbar-title>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>FocusFriend</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and down">
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn id="add_movie_link" flat v-bind:to="{ name: 'AddMovie' }"
         v-if="current_user">Agregar película</v-btn>
         <v-btn id="user_email" flat v-if="current_user">
@@ -32,13 +32,13 @@
         </v-btn>
         <v-btn flat v-bind:to="{ name: 'Register' }" v-if="!current_user"
         id="register_btn">
-          Registrar
+          Registro
         </v-btn>
-        <v-btn flat v-bind:to=" { name: 'Login' }" v-if="!current_user"
+        <v-btn flat v-bind:to="{ name: 'Login' }" v-if="!current_user"
         id="login-btn">
           Iniciar sesiòn
         </v-btn>
-        <v-btn id="logout-btn" v-if="current_user" @click="logout">
+        <v-btn flat id="logout-btn" v-if="current_user" @click="logout">
           Cerrar sesiòn
         </v-btn>
       </v-toolbar-items>

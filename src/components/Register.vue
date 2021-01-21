@@ -40,7 +40,7 @@ export default {
     confirm_password: '',
     emailRules: [
       v => !!v || 'E-mail requerido',
-      v => /\S+@\S+\.S+/.test(v) || 'El E-mail debe ser válido'
+      v => /\S+@\S+\.\S+/.test(v) || 'El E-mail debe ser válido'
     ]
   }),
   methods: {
